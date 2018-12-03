@@ -1,0 +1,5 @@
+Totalsteps <- aggregate(steps ~ date,Activity,  sum)
+mean <- mean(Totalsteps$steps)
+print(paste0("Mean : ", mean))
+median <- median(Totalsteps$steps)
+print(paste0("Median : ", median))
